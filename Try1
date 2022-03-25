@@ -1,0 +1,14 @@
+
+import javax.swing.text.View
+
+
+fun main
+fun onClick(v: View) {
+    // по id определеяем кнопку, вызвавшую этот обработчик
+    when (v.getId()) {
+        R.id.btnOk ->      // кнопка ОК
+            tvOut.setText("Нажата кнопка ОК")
+        R.id.btnCancel ->      // кнопка Cancel
+            tvOut.setText("Нажата кнопка Cancel")
+    }
+}
